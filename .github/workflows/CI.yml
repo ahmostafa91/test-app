@@ -31,11 +31,11 @@ jobs:
     - name: Install dependencies
       #Using npm ci is generally faster than running npm install
       run: |
-        cd test-app
+        cd my-app
         npm ci
     - name: Build the app
       run: |
-        cd test-app
+        cd my-app
         npm run build
     - name: Run component tests
       run: |
